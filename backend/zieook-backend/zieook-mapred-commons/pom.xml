@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>zieook-backend</artifactId>
+    <groupId>nl.gridline.zieook.backend</groupId>
+    <version>0.4.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>zieook-mapred-commons</artifactId>
+  <name>${artifactId}</name>
+  <description>A package that is shared among the zieook backend and the map-reduce libraries. It contains mostly generic code</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.mahout</groupId>
+  		<artifactId>mahout-core</artifactId>
+  		<scope>provided</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>nl.gridline.zieook.backend.api</groupId>
+  		<artifactId>zieook-api-data</artifactId>
+  		<version>${project.version}</version>
+  		<scope>compile</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>nl.gridline.zieook.backend.api</groupId>
+  		<artifactId>zieook-api-workflow</artifactId>
+  		<version>${project.version}</version>
+  		<scope>compile</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.hbase</groupId>
+  		<artifactId>hbase</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>ch.qos.logback</groupId>
+  		<artifactId>logback-classic</artifactId>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
+</project>

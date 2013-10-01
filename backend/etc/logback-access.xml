@@ -1,0 +1,54 @@
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+
+-->
+<configuration debug="true">
+	<!-- see http://logback.qos.ch/access.html -->
+
+
+	<!-- TeeFilter for debugging -->
+	<!-- <filter> <filter-name>TeeFilter</filter-name> <filter-class>ch.qos.logback.access.servlet.TeeFilter</filter-class> 
+		</filter> <filter-mapping> <filter-name>TeeFilter</filter-name> <url-pattern>/*</url-pattern> 
+		</filter-mapping> -->
+
+	<!-- <filter class="ch.qos.logback.access.filter.CountingFilter"> <name>countingFilter</name> 
+		</filter> -->
+
+	<!-- standard out appender: -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.access.PatternLayoutEncoder">
+			<pattern>clf</pattern>
+		</encoder>
+	</appender>
+
+	<!-- File appender -->
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>zieook.log"</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>access.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.access.PatternLayoutEncoder">
+			<Pattern>combined</Pattern>
+		</encoder>
+	</appender>
+
+	<appender-ref ref="STDOUT" />
+	<!-- <appender-ref ref="FILE" /> -->
+
+</configuration>

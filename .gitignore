@@ -1,0 +1,12 @@
+# eclipse project files, should not go in the scm 
+*.project
+*.classpath
+*.settings/
+*target/
+#
+# maven build folder
+target/
+# specific zieook files that need to be ignored
+zieook/src/main/dist/webapps
+zieook/src/main/dist/recommender
+zieook/src/main/dist/lib

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>zieook-backend</artifactId>
+		<groupId>nl.gridline.zieook.backend</groupId>
+		<version>0.4.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>zieook-client</artifactId>
+	<name>${artifactId}</name>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>nl.gridline.zieook.client.tools.ZieOok</mainClass>
+							<packageName>nl.gridline.zieook.client.tools</packageName>
+						</manifest>
+						<manifestEntries>
+							<mode>development</mode>
+							<url>${pom.url}</url>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jsp-api-2.1</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>servlet-api-2.5</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nl.gridline.zieook.backend</groupId>
+			<artifactId>zieook-backend-data</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>nl.gridline.zieook.backend</groupId>
+			<artifactId>zieook-backend-workflow</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>uk.co.flamingpenguin.jewelcli</groupId>
+			<artifactId>jewelcli</artifactId>
+		</dependency>
+	</dependencies>
+
+
+</project>

@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>zieook-inx</artifactId>
+		<groupId>nl.gridline.zieook.backend.inx</groupId>
+		<version>0.4.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>zieook-movielens</artifactId>
+	<name>Movielens import / export</name>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>nl.gridline.zieook.backend</groupId>
+			<artifactId>zieook-mapred-commons</artifactId>
+			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>resteasy-jaxb-provider</artifactId>
+					<groupId>org.jboss.resteasy</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>resteasy-jaxrs</artifactId>
+					<groupId>org.jboss.resteasy</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>resteasy-jettison-provider</artifactId>
+					<groupId>org.jboss.resteasy</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>servlet-api-2.5</artifactId>
+					<groupId>org.mortbay.jetty</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-core</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>hbase</artifactId>
+					<groupId>org.apache.mahout.hbase</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>google-collections</artifactId>
+					<groupId>com.google.collections</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2.1</version>
+				<configuration>
+					<!-- <finalName>${project.artifactId}-${project.version}-mapreduce.jar</finalName> -->
+					<descriptors>
+						<descriptor>src/main/assembly/mapreduce.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>jar-</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-shade-plugin</artifactId> 
+				<version>1.4</version> <executions> <execution> <phase>package</phase> <goals> 
+				<goal>shade</goal> </goals> <configuration> <shadedArtifactAttached>true</shadedArtifactAttached> 
+				<shadedClassifierName>mapred</shadedClassifierName> <artifactSet> <includes> 
+				<include>nl.gridline.zieook.backend.api:zieook-api-data:jar:</include> <include>nl.gridline.zieook.backend:zieook-mapred-commons</include> 
+				<include>org.apache.mahout:*</include> <include>org.uncommons.maths:uncommons-maths</include> 
+				<include>org.uncommons.watchmaker:watchmaker-framework</include> <include>com.google.collections:google-collections</include> 
+				<include>com.throughworks.xstream:xstream</include> <include>org.apache.lucene:lucene-core</include> 
+				<include>org.apache.lucene:lucene-analyzers</include> <include>org.apache.mahout.commons:commons-cli</include> 
+				<include>commons-math:commons-math</include> <include>commons-collections:commons-collections</include> 
+				<include>com.google.guava:guava</include> <include>com.google.code.gson:gson</include> 
+				<include>org.slf4j:slf4j-api</include> <include>commons-dbcp:commons-dbcp</include> 
+				<include>commons-pool:commons-pool</include> <include>commons-lang:commons-lang</include> 
+				</includes> </artifactSet> </configuration> </execution> </executions> </plugin> -->
+		</plugins>
+	</build>
+
+</project>

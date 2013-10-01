@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+
+-->
+<configuration>
+
+	<!-- hadoop jobtracker address -->
+	<property>
+		<name>mapred.job.tracker</name>
+		<value>mulisch:8021</value>
+	</property>
+
+	<!-- zookeeper hostname -->
+	<property>
+		<name>zieook.zookeeper.host</name>
+		<value>mulisch</value>
+	</property>
+
+	<!-- zookeeper port -->
+	<property>
+		<name>zieook.zookeeper.port</name>
+		<value>2181</value>
+	</property>
+
+	<!-- hbase master address -->
+	<property>
+		<name>hbase.master</name>
+		<value>mulisch:60000</value>
+	</property>
+
+	<!-- hdfs root path -->
+	<property>
+		<name>fs.default.name</name>
+		<value>hdfs://mulisch:8020</value>
+	</property>
+
+	<!-- zieook hdfs path prefix, all zieook data is in this folder -->
+	<property>
+		<name>zieook.hdfs.path</name>
+		<value>/zieook</value>
+	</property>
+
+	<!-- hbase root directory, all hbase data goes in this folder -->
+	<property>
+		<name>hbase.rootdir</name>
+		<value>hdfs://mulisch:8020/hbase</value>
+	</property>
+
+	<!-- is the hbase cluster distributed? -->
+	<property>
+		<name>hbase.cluster.distributed</name>
+		<value>true</value>
+	</property>
+
+	<!-- zieook movielens import (also contains a lot of other map-reduce tasks) 
+		map-reduce jar name / location -->
+	<property>
+		<name>zieook.mapred.movielens</name>
+		<value>recommender/zieook-movielens-${project.version}-mapreduce.jar
+		</value>
+	</property>
+
+	<!-- zieook oai czp import map reduce library -->
+	<property>
+		<name>zieook.mapred.czp</name>
+		<value>recommender/zieook-czp-${project.version}-mapreduce.jar</value>
+	</property>
+
+	<!-- zieook oai dc import map-reduce library -->
+	<property>
+		<name>zieook.mapred.oai_dc</name>
+		<value>recommender/zieook-dc-${project.version}-mapreduce.jar</value>
+	</property>
+
+	<!-- zieook taalserver analysis map-reduce jar with advanced language algorithms -->
+	<property>
+		<name>zieook.mapred.taalserver</name>
+		<value>recommender/hadoop-taalserver-${project.version}-mapreduce.jar
+		</value>
+	</property>
+
+
+	<!-- zieook free language tools - map reduce jar with naive language algorithms -->
+	<property>
+		<name>zieook.mapred.freetaalserver</name>
+		<value>recommender/hadoop-freetaalserver-${project.version}-mapreduce.jar
+		</value>
+	</property>
+
+	<!-- is zieook allowed to use the taalserver: (if there is no taalserver 
+		library this setting has no effect) -->
+	<property>
+		<name>zieook.mapred.usetaalserver</name>
+		<value>true</value>
+	</property>
+
+	<!-- global oai setting: import limit, -1 means no limit -->
+	<property>
+		<name>oai.global.itemlimit</name>
+		<value>-1</value>
+	</property>
+
+	<!-- override the oai from parameter with a date stamp yyyy-MM-dd or ISO 
+		date time stamp -->
+	<!-- <property> <name>oai.global.from</name> <value></value> </property> -->
+
+	<!-- override the oai until parameter with a date stamp yyyy-MM-dd or ISO 
+		date time stamp -->
+	<!-- <property> <name>oai.global.until</name> <value></value> </property> -->
+
+	<!-- some oai server don't report the correct granularity, this overrides 
+		the granularity -->
+	<!-- <property> <name>oai.global.dateformat.override</name> <value>yyyy-MM-dd</value></property> -->
+
+
+	<!-- statistics popularity type: name,earliest-time semicolon separated. 
+		The name is arbitrary the time is the difference from now in seconds -->
+	<!-- day: 60*60*24 = 86400 seconds -->
+	<!-- week: 7*24*60*60 = 604800 seconds -->
+	<!-- 3 months: is (365/4) * 24*60*60 = 7884000 seconds -->
+	<!-- 6 months: is (365/2) * 24*60*60 = 15768000 seconds -->
+	<!-- 12 months is 365 * 24 * 60 * 60 = 31536000 seconds -->
+	-->
+	<property>
+		<name>statistics.popularity.types</name>
+		<value>day,86400;week,604800;3months,7884000;6months,15768000;year,31536000
+		</value>
+	</property>
+
+
+
+
+</configuration>
+

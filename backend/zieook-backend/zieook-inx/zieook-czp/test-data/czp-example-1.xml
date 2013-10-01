@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+
+-->
+<record xmlns:ns2="http://www.openarchives.org/OAI/2.0/">
+	<ns2:record>
+		<ns2:header>
+			<ns2:identifier>oai:beeldengeluid:1</ns2:identifier>
+			<ns2:datestamp>2011-02-01</ns2:datestamp>
+			<ns2:setSpec>Beeld en Geluid</ns2:setSpec>
+		</ns2:header>
+		<ns2:metadata>
+			<czp:lom
+				xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"
+				xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:czp="http://www.imsglobal.org/xsd/imsmd_v1p2"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<czp:general>
+					<czp:title>
+						<czp:langstring xml:lang="nl">HET KLOKHUIS
+							(expr_id:22033)</czp:langstring>
+					</czp:title>
+					<czp:catalogentry>
+						<czp:catalog>Edit</czp:catalog>
+						<czp:entry>
+							<czp:langstring xml:lang="x-none">oai:beeldengeluid:1
+							</czp:langstring>
+						</czp:entry>
+					</czp:catalogentry>
+					<czp:language>nl</czp:language>
+					<czp:description>
+						<czp:langstring xml:lang="nl">BG_35288-out.wmv Kramer
+							gaat op bezoek bij Marnix Rueb, cartoonist. Rueb geeft uitleg
+							over zijn figuur Haagse Harry en over bekakt en plat Haags.
+							Diverse uitdrukkingen worden voorgelezen door Rueb, oa over
+							poepen. Kramer maakt met Rueb en de Haagse artiest Sjaak Bral een
+							wandeling door Den Haag. Met door het hele programma heen
+							cartoons met gesproken teksten van Marnix Rueb. SHOTS: 18:46:41
+							Haags caftafereel. SKETCHES: - Frank Groothof draagt gedicht in
+							dialect voor, dat geschreven is door dichter Hans Dorrestijn; -
+							dichter Haagse Harry (Edwin Rutten) draagt gedicht op, dat
+							simultaan vertaald wordt door een bekakte Hagenaar (Harry van
+							Rijthoven). Het gedicht wordt aangekondigd (Laus Steenbeeke); -
+							zoon (Hugo Konings) van bekakte Haagse ouders (Nettie Blanken en
+							Harry van Rijthoven) heeft vriendinnetje (Thekla Reuten) uit de
+							Schilderswijk. Teleblik : Serie dagelijkse jeugdprogramma"s met
+							een wisselend thema, samengesteld uit korte reportages en
+							sketches. Presentatie: Jeroen Kramer. Deze aflevering: het Haagse
+							dialect.</czp:langstring>
+					</czp:description>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Blanken</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Nettie</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Groothof</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Frank</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Rijthoven</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">taal</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">spreekwoorden
+						</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">dialecten</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Harry van</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Steenbeeke
+						</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Laus</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Bral</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Sjaak</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Rueb</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Marnix</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Konings</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">Hugo</czp:langstring>
+					</czp:keyword>
+					<czp:coverage>
+						<czp:langstring xml:lang="nl">Den Haag</czp:langstring>
+					</czp:coverage>
+					<czp:coverage>
+						<czp:langstring xml:lang="nl">Nederland</czp:langstring>
+					</czp:coverage>
+					<czp:aggregationlevel>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">1</czp:langstring>
+						</czp:value>
+					</czp:aggregationlevel>
+				</czp:general>
+				<czp:lifecycle>
+					<czp:version>
+						<czp:langstring xml:lang="x-none">1.0</czp:langstring>
+					</czp:version>
+					<czp:status>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">final</czp:langstring>
+						</czp:value>
+					</czp:status>
+					<czp:contribute>
+						<czp:role>
+							<czp:source>
+								<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+							</czp:source>
+							<czp:value>
+								<czp:langstring xml:lang="x-none">publisher
+								</czp:langstring>
+							</czp:value>
+						</czp:role>
+						<czp:centity>
+							<czp:vcard>
+								BEGIN:VCARD
+								VERSION:2.1
+								N: NPS
+								END:VCARD
+							</czp:vcard>
+						</czp:centity>
+						<czp:date>
+							<czp:datetime>1999-11-07</czp:datetime>
+						</czp:date>
+					</czp:contribute>
+					<czp:contribute>
+						<czp:role>
+							<czp:source>
+								<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+							</czp:source>
+							<czp:value>
+								<czp:langstring xml:lang="x-none">author</czp:langstring>
+							</czp:value>
+						</czp:role>
+						<czp:centity>
+							<czp:vcard>
+								BEGIN:VCARD
+								VERSION:2.1
+								N: NPS
+								END:VCARD
+							</czp:vcard>
+						</czp:centity>
+						<czp:date />
+					</czp:contribute>
+				</czp:lifecycle>
+				<czp:metametadata>
+					<czp:metadatascheme>LOMv1.0</czp:metadatascheme>
+					<czp:metadatascheme>czp_povobve_v1p3</czp:metadatascheme>
+				</czp:metametadata>
+				<czp:technical>
+					<czp:format>text/html</czp:format>
+					<czp:location>http://www.les20.nl/asset/detail/1</czp:location>
+					<czp:duration>
+						<czp:datetime>PT14M21.6S</czp:datetime>
+					</czp:duration>
+				</czp:technical>
+				<czp:educational>
+					<czp:learningresourcetype>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_learningresourcetype_czp_20060628.xml
+							</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">informatiebron
+							</czp:langstring>
+						</czp:value>
+					</czp:learningresourcetype>
+					<czp:intendedenduserrole>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">author</czp:langstring>
+						</czp:value>
+					</czp:intendedenduserrole>
+					<czp:typicalagerange>
+						<czp:langstring xml:lang="x-none">9-15</czp:langstring>
+					</czp:typicalagerange>
+				</czp:educational>
+				<czp:rights>
+					<czp:cost>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">yes</czp:langstring>
+						</czp:value>
+					</czp:cost>
+					<czp:copyrightandotherrestrictions>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">yes</czp:langstring>
+						</czp:value>
+					</czp:copyrightandotherrestrictions>
+					<czp:description>
+						<czp:langstring xml:lang="x-none">Zie
+							http://www.ed-it.nu/voorwaarden</czp:langstring>
+					</czp:description>
+				</czp:rights>
+				<czp:classification>
+					<czp:purpose>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">onbekend</czp:langstring>
+						</czp:value>
+					</czp:purpose>
+				</czp:classification>
+			</czp:lom>
+		</ns2:metadata>
+	</ns2:record>
+</record>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+
+-->
+<project name="ZieOok">
+	<bannerLeft>
+		<name>ZieOok</name>
+		<src>http://gridline.nl/images/logo.png</src>
+		<href>http://www.gridline.nl</href>
+	</bannerLeft>
+	<bannerRight>
+		<src>images/logo.png</src>
+	</bannerRight>
+	<body>
+		<menu name="Zie Ook">
+			<item name="Introduction" href="index.html" />
+			<item name="Installation" href="getting-started.html" />
+			<item name="Recommenders" href="recommenders.html" />
+			<item name="Release Notes" href="release-notes.html" />
+			<item name="General Information" href="about.html" />
+			<item name="Hadoop installation" href="hadoop-installation.apt" />
+			<item name="Road Map" href="roadmap.html" />
+		</menu>
+
+		<links>
+			<item name="Mahout" href="http://mahout.apache.org/" />
+			<item name="Hadoop" href="http://hadoop.apache.org/" />
+			<item name="HBase" href="http://hbase.apache.org/" />
+		</links>
+		<menu ref="reports" />
+
+	</body>
+</project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>DataManager</display-name>
+	<context-param>
+		<param-name>resteasy.providers</param-name>
+		<param-value>nl.gridline.zieook.exceptions.ZieOokExceptionMapper</param-value>
+	</context-param>
+	<context-param>
+		<param-name>resteasy.resources</param-name>
+		<param-value>
+				nl.gridline.zieook.data.rest.stat.CollectionStatisticsImpl,
+				nl.gridline.zieook.data.rest.stat.RecommenderStatisticsImpl,
+				nl.gridline.zieook.data.rest.stat.UserStatisticsImpl,
+				nl.gridline.zieook.data.rest.UserDataImpl,
+				nl.gridline.zieook.data.rest.CollectionDataImpl,
+				nl.gridline.zieook.data.rest.RatingEventsImpl,
+				nl.gridline.zieook.data.rest.ZieOokStatus,			
+				nl.gridline.zieook.data.rest.RecommenderImpl,
+				nl.gridline.zieook.data.rest.IdUriMappingImpl,
+				nl.gridline.rest.methods.RestMethods
+		</param-value>
+	</context-param>
+	<context-param>
+		<param-name>resteasy.scan</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+	</listener>
+	<listener>
+		<listener-class>nl.gridline.zieook.data.listener.DataManagerListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>nl.gridline.zieook.data.listener.StatisticsDataControllerListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>Resteasy</servlet-name>
+		<servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Resteasy</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+</web-app>

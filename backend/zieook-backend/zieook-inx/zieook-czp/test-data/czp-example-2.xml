@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+
+-->
+<record-wrapper xmlns:ns2="http://www.openarchives.org/OAI/2.0/">
+	<record>
+		<ns2:header>
+			<ns2:identifier>oai:beeldengeluid:2</ns2:identifier>
+			<ns2:datestamp>2011-08-04</ns2:datestamp>
+			<ns2:setSpec>Beeld en Geluid</ns2:setSpec>
+		</ns2:header>
+		<ns2:metadata>
+			<czp:lom
+				xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"
+				xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:czp="http://www.imsglobal.org/xsd/imsmd_v1p2"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<czp:general>
+					<czp:title>
+						<czp:langstring xml:lang="nl">HET KLOKHUIS
+							(expr_id:22035)</czp:langstring>
+					</czp:title>
+					<czp:catalogentry>
+						<czp:catalog>Edit</czp:catalog>
+						<czp:entry>
+							<czp:langstring xml:lang="x-none">oai:beeldengeluid:2
+							</czp:langstring>
+						</czp:entry>
+					</czp:catalogentry>
+					<czp:language>nl</czp:language>
+					<czp:description>
+						<czp:langstring xml:lang="nl">Monique Hagen legt uit hoe
+							de globe is ingedeeld in parallellen en meridianen, het maken en
+							gebruiken van themakaarten en de verandering van atlassen in de
+							loop der tijd. Zij kijkt en praat met cartografen, die gegevens
+							verzamelen over landen en kaarten zonodig bijwerken met de hand
+							en met de computer. SHOTS: div. kaarten uit de atlas; bijwerken
+							van kaarten door cartograaf; div. computerkaarten van Frankrijk;
+							luchtfoto. SKETCHES: - Kalepaard (Joost Prinsen) is
+							ontdekkingsreiziger, die het jammer vindt dat er niets meer valt
+							de ontdekken: er zijn geen witte plekken meer op de kaart; -
+							liedje over een oude atlas met drank- en eetvlekken; - Boy
+							Zonderman (Frank Groothof) gebruikt zijn eigen aanwijsbord om de
+							weg te vinden. Teleblik BG_35319-out.wmv : Serie dagelijkse
+							jeugdprogramma"s met een wisselend thema, samengesteld uit korte
+							reportages en sketches. Deze aflevering: de atlas. Presentatie:
+							Monique Hagen.</czp:langstring>
+					</czp:description>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">landkaarten
+						</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">magazine</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">cartografie
+						</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">atlassen</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">humor</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">tekenaars</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">computers</czp:langstring>
+					</czp:keyword>
+					<czp:keyword>
+						<czp:langstring xml:lang="nl">meridianen
+						</czp:langstring>
+					</czp:keyword>
+					<czp:aggregationlevel>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">1</czp:langstring>
+						</czp:value>
+					</czp:aggregationlevel>
+				</czp:general>
+				<czp:lifecycle>
+					<czp:version>
+						<czp:langstring xml:lang="x-none">1.0</czp:langstring>
+					</czp:version>
+					<czp:status>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">final</czp:langstring>
+						</czp:value>
+					</czp:status>
+					<czp:contribute>
+						<czp:role>
+							<czp:source>
+								<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+							</czp:source>
+							<czp:value>
+								<czp:langstring xml:lang="x-none">author</czp:langstring>
+							</czp:value>
+						</czp:role>
+						<czp:centity>
+							<czp:vcard>
+								BEGIN:VCARD
+								VERSION:2.1
+								N: NPS
+								END:VCARD
+							</czp:vcard>
+						</czp:centity>
+						<czp:date />
+					</czp:contribute>
+					<czp:contribute>
+						<czp:role>
+							<czp:source>
+								<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+							</czp:source>
+							<czp:value>
+								<czp:langstring xml:lang="x-none">publisher
+								</czp:langstring>
+							</czp:value>
+						</czp:role>
+						<czp:centity>
+							<czp:vcard>
+								BEGIN:VCARD
+								VERSION:2.1
+								N: NPS
+								END:VCARD
+							</czp:vcard>
+						</czp:centity>
+						<czp:date>
+							<czp:datetime>1998-04-17</czp:datetime>
+						</czp:date>
+					</czp:contribute>
+				</czp:lifecycle>
+				<czp:metametadata>
+					<czp:metadatascheme>LOMv1.0</czp:metadatascheme>
+					<czp:metadatascheme>czp_povobve_v1p3</czp:metadatascheme>
+				</czp:metametadata>
+				<czp:technical>
+					<czp:format>text/html</czp:format>
+					<czp:location>http://www.les20.nl/asset/detail/2</czp:location>
+					<czp:duration>
+						<czp:datetime>PT15M21.9S</czp:datetime>
+					</czp:duration>
+				</czp:technical>
+				<czp:educational>
+					<czp:learningresourcetype>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">http://purl.edustandaard.nl/vdex_learningresourcetype_czp_20060628.xml
+							</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">informatiebron
+							</czp:langstring>
+						</czp:value>
+					</czp:learningresourcetype>
+					<czp:intendedenduserrole>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">author</czp:langstring>
+						</czp:value>
+					</czp:intendedenduserrole>
+					<czp:typicalagerange>
+						<czp:langstring xml:lang="x-none">9-15</czp:langstring>
+					</czp:typicalagerange>
+				</czp:educational>
+				<czp:rights>
+					<czp:cost>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">yes</czp:langstring>
+						</czp:value>
+					</czp:cost>
+					<czp:copyrightandotherrestrictions>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">yes</czp:langstring>
+						</czp:value>
+					</czp:copyrightandotherrestrictions>
+					<czp:description>
+						<czp:langstring xml:lang="x-none">Zie
+							http://www.ed-it.nu/voorwaarden</czp:langstring>
+					</czp:description>
+				</czp:rights>
+				<czp:classification>
+					<czp:purpose>
+						<czp:source>
+							<czp:langstring xml:lang="x-none">LOMv1.0</czp:langstring>
+						</czp:source>
+						<czp:value>
+							<czp:langstring xml:lang="x-none">onbekend</czp:langstring>
+						</czp:value>
+					</czp:purpose>
+				</czp:classification>
+			</czp:lom>
+		</ns2:metadata>
+	</record>
+</record-wrapper>
